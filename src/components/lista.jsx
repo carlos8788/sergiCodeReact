@@ -1,4 +1,5 @@
 import { useState } from "react";
+import AgregarTarea from "./AgregarTarea";
 
 const listaTemas = [
     { nombre: 'Instalaciones', visto: true },
@@ -22,14 +23,29 @@ const Items = ({ nombre, visto, index }) => {
 }
 
 export const ListadoCurso = () => {
+
     const [lista, setLista] = useState(listaTemas)
+
+    const addTasks = () => setLista([...lista, { nombre: 'nueva tarea', visto: true }])
+
+    const onAgregarTask = (valor) => {
+        const valorCheck = valor.trim()
+        if(valorCheck < 1) return
+        const task = {
+            nombre: valorCheck,
+            visto: false
+        }
+        setLista([...lista, task])
+    }
 
     return (
         <>
             <h1>Listado de temas del Curso</h1>
+            <AgregarTarea agregarTask={onAgregarTask}/>
             <ol>
-                {lista.map( (item, i) => <Items key={i} visto={item.visto} nombre={item.nombre}/>)}
+                {lista.map((item, i) => <Items key={i} visto={item.visto} nombre={item.nombre} />)}
             </ol>
+            {/* <button onClick={addTasks}>Agregar tarea</button> */}
         </>
     )
 }

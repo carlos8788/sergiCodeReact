@@ -3,13 +3,15 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.css'
 import UseStateApp from './components/useState.jsx'
 import { ListadoCurso } from './components/lista.jsx';
+import UserApps from './components/UserApps';
 
 const App = () => {
   return(
-    <>
+    <div className='container my-5'>
       {/* <UseStateApp/> */}
-      <ListadoCurso/>
-    </>
+      {/* <ListadoCurso/> */}
+      <UserApps/>
+    </div>
   )
 }
 
