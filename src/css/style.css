@@ -1,0 +1,24 @@
+* {
+    padding: 0px;
+    margin: 0;
+    background-color: rgb(61, 59, 59);
+    color: white;
+}
+
+.size_img{
+    width: 500px;
+}
+
+.bg-gray{
+    background-color: rgb(61, 59, 59);
+    color: white;
+    font-weight: bold;
+}
+
+.decorated-none{
+    list-style-type: none;
+}
+
+.button-with{
+    width: 100px;
+}
