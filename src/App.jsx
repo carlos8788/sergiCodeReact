@@ -1,16 +1,19 @@
 // @ts-ignore
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.css'
-import UseStateApp from './components/useState.jsx'
-import { ListadoCurso } from './components/lista.jsx';
-import UserApps from './UserApps';
+import ContadorComponents from './components/ContadorComponents';
+import { FormComponent } from './components/FormComponent';
 
 const App = () => {
   return(
     <div className='container my-5'>
-      {/* <UseStateApp/> */}
-      {/* <ListadoCurso/> */}
-      <UserApps/>
+      <h1>Apps de hooks</h1>
+      <hr />
+      <ContadorComponents/>
+      <hr />
+      <FormComponent/>
+
+
     </div>
   )
 }
