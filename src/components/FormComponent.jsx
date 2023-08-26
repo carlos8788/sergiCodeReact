@@ -1,7 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useForm } from '../hooks/useForm'
 
 export const FormComponent = () => {
+
+    const focusRef = useRef();
+
+    useEffect(() => {
+        focusRef.current.focus();
+    },[])
 
     const initialForm = {
         username: '', 
@@ -21,6 +27,7 @@ export const FormComponent = () => {
             <div className="mb-3">
                 <label htmlFor="username" className="form-label">Username</label>
                 <input
+                    ref={focusRef}
                     type="text"
                     className="form-control"
                     name="username"
