@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import ContadorComponents from './components/ContadorComponents';
 import { FormComponent } from './components/FormComponent';
 import { UsuariosComponent } from './components/UsuariosComponent';
+import { CalculosPesados } from './components/CalculosPesados';
 
 const App = () => {
   return(
@@ -17,6 +18,8 @@ const App = () => {
       <hr />
       <UsuariosComponent/>
 
+      <hr />
+      <CalculosPesados/>
     </div>
   )
 }
