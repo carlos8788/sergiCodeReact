@@ -22,3 +22,7 @@
 .button-with{
     width: 100px;
 }
+
+thead {
+    text-transform: capitalize;
+}

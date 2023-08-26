@@ -3,6 +3,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.css'
 import ContadorComponents from './components/ContadorComponents';
 import { FormComponent } from './components/FormComponent';
+import { UsuariosComponent } from './components/UsuariosComponent';
 
 const App = () => {
   return(
@@ -13,6 +14,8 @@ const App = () => {
       <hr />
       <FormComponent/>
 
+      <hr />
+      <UsuariosComponent/>
 
     </div>
   )
