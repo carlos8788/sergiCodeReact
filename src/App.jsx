@@ -5,6 +5,7 @@ import ContadorComponents from './components/ContadorComponents';
 import { FormComponent } from './components/FormComponent';
 import { UsuariosComponent } from './components/UsuariosComponent';
 import { CalculosPesados } from './components/CalculosPesados';
+import { CallBackComponent } from './components/CallBackComponent';
 
 const App = () => {
   return(
@@ -20,6 +21,9 @@ const App = () => {
 
       <hr />
       <CalculosPesados/>
+
+      <hr />
+      <CallBackComponent/>
     </div>
   )
 }
