@@ -6,6 +6,7 @@ import { FormComponent } from './components/FormComponent';
 import { UsuariosComponent } from './components/UsuariosComponent';
 import { CalculosPesados } from './components/CalculosPesados';
 import { CallBackComponent } from './components/CallBackComponent';
+import { ListaTareas } from './components/ListaTareas';
 
 const App = () => {
   return(
@@ -24,6 +25,9 @@ const App = () => {
 
       <hr />
       <CallBackComponent/>
+
+      <hr />
+      <ListaTareas/>
     </div>
   )
 }
