@@ -17,8 +17,9 @@ const listaTemas = [
 const Items = ({ nombre, visto, index }) => {
 
     const estilo = visto ? 'text-success' : 'text-danger';
+    const icono = visto ? '✅' : '🚫';  // Para poner íconos en el código tenemos que presionar tecla windows y luego (punto)
     return (
-        <li key={index} className={estilo}>{nombre}</li>
+        <li key={index} className={estilo}>{nombre} {icono}</li>
     )
 }
 
