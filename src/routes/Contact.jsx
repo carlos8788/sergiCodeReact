@@ -15,7 +15,7 @@ export const Contact = () => {
       </thead>
       <tbody>
         <tr>
-          <th >{usuario.nombre}</th>
+          <th>{usuario.nombre}</th>
           <td>{usuario.tecnologia}</td>
           <td>{usuario.mail}</td>
           <td>{usuario.redes}</td>
